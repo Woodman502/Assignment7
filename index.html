@@ -82,43 +82,51 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <h2 class="section-heading">Step 1</h2>
-                    <p>Hello and thank you for visiting my Angular page.  We will assume you have a basic understanding of HTML, Bootstrap, and Javascript as to not waste time. The very first thing to consider when begining coding with Angular to consider is folder structure.  You will want to find the files listed in the directories below by getting the bootstrap and angular files and then structuring your folders as pictured below.</p>
-
-                   <a href="#">
+                    <h2 class="section-heading">What is Node?</h2>
+                    <p>Node.js is an open source, cross-platform runtime environment for server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, Linux, FreeBSD, and IBM i.</p>
+                    <a href="#">
                         <img class="img-responsive" src="img/node4.png" alt=""></img>
                     </a>
+                    <p>Node.js uses the Google V8 JavaScript engine to execute code, and a large percentage of the basic modules are written in JavaScript. Node.js contains a built-in library to allow applications to act as a Web server without software such as Apache HTTP Server or IIS.</p>
+
+                   
                     
-                    <h2 class="section-heading">Step2</h2>
+                    <h2 class="section-heading">Why was Node created?</h2>
                     
-                    <p>Next you will want to create an app.js file that will house your Angular application.  Then create the controller for the application and then provide the appropiate references to it in your index.html file as pictured below with the statements ng-app and ng-controller (Note: ng indicates it is angular specific inside the tags.</p>
+                    <p>Node.js was created and first published for Linux use in 2009. Its development and maintenance was inspired by Ryan Dahl and sponsored by Joyent, the firm where Dahl worked. Dahl was motivated to create Node.js after seeing a file upload progress bar on Flickr. 
+                    <a href="#">
+                        <img class="img-responsive" src="img/Ryan_Dahl.jpg" alt=""></img>
+                    </a>
+                    <span class="caption text">Creator of Node JS: Ryan Dahl</span>
+                    The browser did not know how much of the file had been uploaded and had to query the Web server. Dahl desired an easier way. Node gathered international attention after its debut at the inaugural JSConf EU conference. NPM, a package manager for Node.js libraries, was introduced in 2011.</p>
 
                     
-                    <h2 class="section-heading">Step3</h2>
+                    <h2 class="section-heading">What does Node actually do?</h2>
                     
-                    <p>Next you will want to create sometime of objects with properties you would like to use to reference in your application written in Javascript Object Notation (JSON) as pictured below in a varbiable. (Note: Properties are indicated by white followed a colon {Property = Property: } and values for the property by double quotes {Value = "Some value"}.</p>
+                    <p>Node establishes two-way connections where client and server can initiate communication, which allows for the flow of data back and forth seemlessly. What makes it different from other server side platforms is traditionally with other server side applications, the client initiates a request to the server, and then; the server responds to the client initiating the request. However with Node as Wikipedia states, "  Node uses an event loop, instead of processes or threads, to scale to millions of connections happening at the same time[citation needed. In contrast to other event-driven servers, Node.js's event loop does not need to be called explicitly. Instead callbacks are defined, and the server automatically enters the event loop at the end of the callback definition. Node.js exits the event loop when there are no further callbacks to be performed." Additionally, it’s all based on HTML, CSS and JS running over the standard port 80 that makes it desirable for developers to use.</p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/node3.jpg" alt=""></img>
+                    </a>
 
                     
 
-                    <h2 class="section-heading">Step4</h2>
+                    <h2 class="section-heading">The Magic of Node</h2>
 
-                    <p>Next is to pass in the properties you would like to reference by using the ng-repeat statement and cycling over them very similarly to a loop pictured below.  For sake of time we included these in div thumbnail tags in bootstrap.
-                    When we use the ng-repeat command it iterates through the angular controller referencing the Json array object stored in the variable.  Additionally, notice that the angular object and its associated properties is denoted in "handlebars" ({{object.property}}).  This allows for a repeating thumbnail with the associated properties to be repeated instead of writing this code for every object in the array.  Cool huh?
-                    </p>
-
+                    <p>What makes Node special is that is considered a NIO(non-blocking Input/Output) application. OK, so speak english.</p>
+                    <p>An example of blocking is how some web servers like ones in Java or PHP handle requests. If your code does something blocking, like reading something from the database, your code "stalls" at that line and waits for the operation to finish. In that period, your machine is holding onto memory and processing time for a thread that isn't doing anything.</p>
+                    <p> What Node does is eliminate the blocking.   Node uses one thread to service all requests. Dahl designed it with the idea that the I/O is the bottleneck, not computations.When requests arrive at the server, they are serviced one at a time. When the code serviced needs to query a database, it sends off a request to that database. However, instead of waiting for the response and stall, it sends the callback to a second queue and the code continues running. Now when the database returns data, the callback gets queued in a third queue where they are pending execution. When the engine is doing nothing, it picks up a callback from the third queue and executes it. So basically it keeps multiple process running simulatenously.</p>
                     
                     
 
                     <h2 class="section-heading">Wrapping it up</h2>
 
-                    <p>What this code does is list a list of the JSOn objects in thumbails that can be clicked to take the user to different Angular tutorials accros the internet. You can see the example page by clicking on Tutorials at the top of the page.You can find a copy of the source code by clicking on the GitHub link at the bottom of the page.  Thanks for visting my site.  If you would like to contact me click the contact page at the top of the page.  Happy coding!!</p>
+                    <p>Node is a very powerful tool that was designed for client side, realtime type application processing efficiency and performance. It harnesses the power of Google's V8 and synchronizes it with HTML, CSS, and JS.  It is asynchronous, saves memory, and a must for any serious developer.  Happy Coding!!</p>
 
                     
 
-                    <a href="#">
-                        <img class="img-responsive" src="img/node3.jpg" alt=""></img>
-                    </a>
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+                    
+                    <span class="caption text-muted">Any sufficiently advanced technology is indistinguishable from magic. ~Arthur C. Clarke</span>
 
                     
 
